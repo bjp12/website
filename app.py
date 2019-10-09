@@ -23,11 +23,6 @@ def page(path):
 	page = pages.get_or_404(path)
 	return render_template('page.html', page=page)
 
-# @app.route('/tag/<string:tag>/')
-# def tag(tag):
-#     tagged = [p for p in pages if tag in p.meta.get('tags', [])]
-#     return render_template('tag.html', pages=tagged, tag=tag)
-
 @app.route('/projects')
 def projects():
 	return render_template('projects.html')
