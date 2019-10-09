@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html>
+	<head>
+		{% include 'header.html' %}
+		<style>
+			{% include 'css/webstyle.css' %}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm justify-content-end header" style="background-color: #c4a6dd">
+			{% include 'navbar.html' %}
+		</nav>
+		<div>
+			<h2 style="padding-top:25px;text-align:center;font-family: 'Quicksand'">A place for all the projects I've completed and am currently working on</h2>
+		<div>
+		<div class="row" style="height: 350px">
+			<div class="col-3"></div>
+			<div class="col-2" style="padding-top: 5%">
+				<img src="static/images/hardhat.png" height="200px" style="display: block;">
+			</div>
+			<div class="col-5" style="padding-top: 7%; font-size: 22px">
+				<p>
+					Unfortunately, this exhibit is still under the works. But it will be up soon!
+				</p>
+			</div>
+			
+		</div>
+		
+		{% include 'footer.html' %}
+
+	</body>
+</html>

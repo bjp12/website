@@ -1,0 +1,283 @@
+
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Arizonia|Cookie|Inconsolata|Noto+Sans+TC|Pacifico|Quicksand|Sacramento|ZCOOL+XiaoWei" rel="stylesheet">
+		<style>
+			.header{
+	background-color: #c4a6dd;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 140px;	
+}
+
+.name{
+	text-decoration: none;
+	font-family: "Sacramento";
+	font-size: 60px;
+	text-align: left;
+	color: white;
+}
+.name:hover{
+	color: white;
+}
+
+li a{
+	color:white;
+	font-size: 20px;
+}
+
+li a:hover{
+	color: white;
+}
+
+.header h1{
+	font-size: 60px;
+	color: white;
+}
+.links{
+	padding-right: 80px;
+}
+.postcard{
+	/*padding-bottom: 30px;*/
+	/*color: white;*/
+	font-family:"Quicksand";
+}
+.aboutme p{
+	padding: 80px;
+	padding-top: 0px;
+	padding-bottom: 40px;
+}
+.aboutme h3{
+	padding-left: 80px;
+	padding-top: 10%;
+}
+.caption{
+	position: absolute;
+	top:15%;
+	text-align: center;
+	font-size: 25px;
+	width:90%;
+	opacity: 0;
+}
+/*.interets {
+	height: 100px;
+}*/
+.interests a{
+	height: 70%;
+	color: black;
+	margin-top: 5%;
+}
+
+.interest {
+	height: 150px;
+}
+
+.cooking:hover a{
+	opacity: 1;
+}
+
+.cooking:hover img{
+	opacity: .5;
+}
+
+.photography:hover a{
+	opacity: 1;
+}
+
+.photography:hover img{
+	opacity: .5;
+}
+
+.teaching:hover a{
+	opacity: 1;
+}
+
+.teaching:hover img{
+	opacity: .5;
+}
+
+.traveling:hover a{
+	opacity: 1;
+}
+
+.traveling:hover img{
+	opacity: .5;
+}
+
+.biopic img{
+	/*border: 5px solid white;*/
+	border-radius: 0px;
+	display: block;
+	float: right;
+	/*margin-left: 150px;*/
+	padding: 50px;
+	padding-right: 0;
+}
+.linebreak{
+	margin-left: 10%;
+	margin-right: 10%;
+	border-top: 1px solid #b0b3b7;
+	margin-bottom: 50px;
+}
+.bottom h3{
+	text-align: center;
+	font-family: "Quicksand";
+}
+.work{
+	border-right: 1px solid #b0b3b7;
+}
+.work a{
+	padding: 2%;
+}
+.logo{
+	display: inline-block;
+	transition: transform .2s;
+}
+.logo:hover{
+	transform: scale(1.25);
+}
+.projects a{
+	padding: 5%;
+	padding-top: 50px;
+}
+.footer{
+	height: 80px;
+	background-color: #c4a6dd; 
+}
+.footer a:hover{
+	text-decoration: none;
+}
+.overlay:hover p{
+	opacity: 1;
+	
+}
+.overlay:hover img{
+	opacity: .35; 
+}
+p{
+	font-family:"Quicksand";
+}
+a{
+	font-family:"Quicksand";
+}
+
+.projecttitle {
+	text-align: center;
+	font-size: 25px;
+	padding-top: 20px;
+	font-weight: bold;
+}
+.projectcontainer img{
+	width: 100%;
+}
+
+.projectcontainer .row img{
+	width: 50%;
+	height: 100%;
+
+}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm justify-content-end header" style="background-color: #c4a6dd">
+			<a class="navbar-brand name" href="/">Bijal Patel</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="links collapse navbar-collapse flex-grow-0 ml-auto mr-1">
+    <ul class="navbar-nav text-right">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/">Interests</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="https://www.instagram.com/cookingwithbijal" style="font-size:14px" target="_blank">cooking</a>
+              <a class="dropdown-item" href="/photography" style="font-size:14px">photography</a>
+              <a class="dropdown-item" href="/teaching" style="font-size:14px">teaching</a>
+              <a class="dropdown-item" href="/traveling" style="font-size:14px">traveling</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/projects">Projects</a>
+        </li>
+    </ul>
+</div>
+		</nav>
+		<!-- main website -->
+		<div class="row no-gutters postcard">
+			<div class="col-1"></div>
+			<div class="col-4 biopic" > 
+				<img src="static/images/me2.jpg" style="height:500px; object-fit: contain;">
+			</div>
+			<div class="col-6 aboutme"> 
+				<h3>Fun.<br>Creative.<br>Passionate.</h3>
+				<br>
+				<p>Hi! I'm Bijal and I am currently a fourth year at UC Berkeley studying Computer Science and STEM Education. I am passionate about empowering young women engineers to pursue careers in technology as well as using technology to improve education in areas where girls were historically uneducated. In my free time, I also enjoy cooking, photography, teaching and traveling.<br><br> 
+				Check out some of my work below!</p>
+			</div>
+		</div>
+		<div class="linebreak"></div>
+		<div class="row bottom">
+			<div class="col-1"></div>
+			<div class="col-5 work">
+				<h3>Work + Volunteer</h3>
+				<br>
+				<a href = "/teaching#juni" title="juni learning"><img class="logo" src="static/images/juni.png" style="width: 40%; margin-left: 10%"></a>
+				<a href = "/teaching#calteach" title="calteach"><img class="logo" src="static/images/calteach.png" style="width: 40%; padding-left: 0"></a>
+			</div>
+			<div class="col-5 projects">
+				<h3>Projects</h3>
+				<br>
+				<a href = "/teaching#swe++" title="SWE++"><img src="static/images/swepp.png" class="logo project" style="width: 30%; margin-left: 10%"></a>
+				<a href="/projects" title="past projects"><img src="static/images/keyboard-regular.svg" class="logo project" style="width: 35%"></a>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<p style="text-align: center; font-size: 28px">My Interests</p>
+		<div class="row no-gutters interests" id="interests">
+			<div class="col-3 teaching interest">
+				<img src="static/images/teaching.jpg" width="100%" height="80%" style="object-fit: cover"> 
+				<a href="/teaching" class="caption">teaching</a>
+			</div>
+			<div class="col-3 cooking interest" >
+				<img src="static/images/cooking.jpg" width="100%" height="80%" style="object-fit: cover"> 
+				<a href="https://www.instagram.com/cookingwithbijal" class="caption" target=”_blank”>cooking</a>
+			</div>
+			<div class="col-3 photography interest">
+				<img src="static/images/photography.jpg" width="100%" height="80%" style="object-fit: cover"> 
+				<a href="/photography" class="caption">photography</a>
+			</div>
+			<div class="col-3 traveling interest">
+				<img src="static/images/traveling.jpg" width="100%" height="80%" style="object-fit: cover"> 
+				<a href="/traveling" class="caption">traveling</a>
+			</div>
+		</div>
+		<div class="footer">
+	<p style="color: white; text-align: center; padding-top: 20px; font-size: 24px">bijal patel       
+		<a href="https://www.linkedin.com/in/bijaljpatel/" target=”_blank”>
+			<span style="padding-left: 10px; color: white">
+					<i class="fab fa-linkedin"></i>
+			</span>
+		</a>
+		<a href="#" target=”_blank”>
+			<span style="color: white">
+					<i class="fab fa-github-square"></i>
+			</span>
+		</a>
+	</p>
+	
+</div>
+	</body>
+</html>

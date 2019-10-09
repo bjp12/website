@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+	<head>
+		{% include 'header.html' %}
+		<style>
+			{% include 'css/webstyle.css' %}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm justify-content-end header" style="background-color: #c4a6dd">
+			{% include 'navbar.html' %}
+		</nav>
+		<div class="row projectcontainer">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<p class="projecttitle">Recipe Book</p>
+				<p class="projectbody">Cooking has always been a passion of mine, so I decided to use my skills to share it with the world. I worked together with a couple friends to put together a database of recipes and created a place where each recipe is clearly visible and easy to access.</p>
+				<p>We are still working on the finishing touches but here is a quick sneak peek:</p>
+				<br>
+				<img src="static/images/index1.png">
+				<br><br>
+				<p>Sort the recipes by Meal, Cusine or Prep Time. Easy recipe is a rotating card that displays the ingredients and steps when you hover over it. Select the ingredients you need for each recipe and build a grocery list. For easy access, the list will be copied to your clipboard.</p>
+				<div class="row">
+					<img class="col-6" src="static/images/recipe1.png">
+					<img class="col-6" src="static/images/recipe2.png">
+				</div>
+				<br>
+				<p>Select the ingredients you already have and find recipes that use those ingredients</p>
+				<div class="row">
+					<img class="col-6" src="static/images/ingredients1.png">
+					<img class="col-6" src="static/images/ingredients2.png">
+				</div>
+				<br>
+				<p>Plan an entire meal using a preset, or by clicking on a recipe to switch it out</p>
+				<div class="row">
+					<img class="col-6" src="static/images/meals1.png">
+					<img class="col-6" src="static/images/meals2.png">
+				</div>
+				<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		{% include 'footer.html' %}
+
+	</body>
+</html>

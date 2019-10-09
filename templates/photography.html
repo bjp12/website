@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% include 'header.html' %}	
+	<title>Photography</title>
+	<style type="text/css">
+		* {
+		  box-sizing: border-box;
+		}
+		.bgimage{
+			background-image: url("static/images/photography.jpg");
+		}
+		.col-6 {
+		  float: left;
+		  padding: 5px;
+		}
+		.row{
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.banner{
+			width: 100%;
+			height: 650px; 
+			border: 0px;
+			margin-top: 0px;
+			object-fit: cover;
+		}
+		img{
+			width: 100%;
+			margin-top: 12px;
+			border-radius: 0px;
+			border: 5px solid white;
+		}
+		.header .name{
+			color: #c4a6dd;
+		}
+		.description{
+			opacity: 0;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			font-size:20px;
+		}
+		h2{
+			text-align: center;
+			font-family: "Advent Pro";
+			font-size: 50px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-left: 300px;
+			margin-right: 300px;
+			color: white;
+			background-color: rgba(0,0,0,0.35);
+		}
+	</style>
+</head>
+<body>
+	<style>
+		{% include 'css/webstyle.css' %}
+	</style>
+	<div class="bgimage banner">
+		<nav class="navbar navbar-expand-sm justify-content-end header" style="background-color: transparent;">
+			{% include 'navbar.html' %}
+		</nav>
+		<h2 style="margin-top: 75px;"> my photography </h2>
+	</div>
+	
+	<div class="row">
+		<div class="col-6" style="padding-left: 10px">
+			<div class="overlay">
+				<img src="static/images/photography4.jpg">
+				<p class="description" style="top: 180px"> A peaceful evening hike in my hometown </p>
+			</div>
+			<div class="overlay">
+				<img src="static/images/photography5.jpg">
+				<p class="description" style="top: 580px"> A striking pose against the silhouette of a pier  </p>
+			</div>
+			<div class="overlay">
+				<img src="static/images/photography8.jpg">
+				<p class="description" style="top: 1080px"> A quiet alley in the middle of downtown LA </p>
+			</div>
+			<div class="overlay">
+				<img src="static/images/photography7.jpg">
+				<p class="description" style="top: 1650px"> Happiness in a field of golden California poppies </p>
+			</div>
+			<div class="overlay">
+				<img src="static/images/photography6.jpg">
+				<p class="description" style="top: 2020px"> A cold look with a glimmer of sunshine </p>
+			</div>
+		</div>
+		<div class="col-6" style="padding-right: 10px">
+			<div class="overlay">
+				<img src="static/images/photography2.jpg">
+				<p class="description" style="top: 180px"> Palm trees and sunsets in Santa Barbara </p>
+			</div>
+			<div class="overlay">
+				<img src="static/images/photography1.jpg">
+				<p class="description" style="top: 500px"> A relaxing nap on Memorial Glade </p>
+			</div>
+			<div class="overlay">
+				<img src="static/images/photography3.jpg">
+				<p class="description" style="top: 880px"> Sailing away into the sunset </p>
+			</div>
+			<div class="overlay">
+				<img src="static/images/photography9.jpg">
+				<p class="description" style="top: 1400px; padding: 10px"> Morning sunlight on the Ferry Building </p>
+			</div>
+			<div class="overlay">
+				<img src="static/images/photography10.jpg">
+				<p class="description" style="top: 1980px"> A view of Memorial Stadium from the top of the Campanile </p>
+			</div>
+		</div>
+	</div>
+	{% include 'footer.html' %}
+</body>
+</html>

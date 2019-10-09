@@ -1,0 +1,173 @@
+.header{
+	background-color: #c4a6dd;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 140px;	
+}
+
+.name{
+	text-decoration: none;
+	font-family: "Sacramento";
+	font-size: 60px;
+	text-align: left;
+	color: white;
+}
+.name:hover{
+	color: white;
+}
+
+li a{
+	color:white;
+	font-size: 20px;
+}
+
+li a:hover{
+	color: white;
+}
+
+.header h1{
+	font-size: 60px;
+	color: white;
+}
+.links{
+	padding-right: 80px;
+}
+.postcard{
+	/*padding-bottom: 30px;*/
+	/*color: white;*/
+	font-family:"Quicksand";
+}
+.aboutme p{
+	padding: 80px;
+	padding-top: 0px;
+	padding-bottom: 40px;
+}
+.aboutme h3{
+	padding-left: 80px;
+	padding-top: 10%;
+}
+.caption{
+	position: absolute;
+	top:15%;
+	text-align: center;
+	font-size: 25px;
+	width:90%;
+	opacity: 0;
+}
+/*.interets {
+	height: 100px;
+}*/
+.interests a{
+	height: 70%;
+	color: black;
+	margin-top: 5%;
+}
+
+.interest {
+	height: 150px;
+}
+
+.cooking:hover a{
+	opacity: 1;
+}
+
+.cooking:hover img{
+	opacity: .5;
+}
+
+.photography:hover a{
+	opacity: 1;
+}
+
+.photography:hover img{
+	opacity: .5;
+}
+
+.teaching:hover a{
+	opacity: 1;
+}
+
+.teaching:hover img{
+	opacity: .5;
+}
+
+.traveling:hover a{
+	opacity: 1;
+}
+
+.traveling:hover img{
+	opacity: .5;
+}
+
+.biopic img{
+	/*border: 5px solid white;*/
+	border-radius: 0px;
+	display: block;
+	float: right;
+	/*margin-left: 150px;*/
+	padding: 50px;
+	padding-right: 0;
+}
+.linebreak{
+	margin-left: 10%;
+	margin-right: 10%;
+	border-top: 1px solid #b0b3b7;
+	margin-bottom: 50px;
+}
+.bottom h3{
+	text-align: center;
+	font-family: "Quicksand";
+}
+.work{
+	border-right: 1px solid #b0b3b7;
+}
+.work a{
+	padding: 2%;
+}
+.logo{
+	display: inline-block;
+	transition: transform .2s;
+}
+.logo:hover{
+	transform: scale(1.25);
+}
+.projects a{
+	padding: 5%;
+	padding-top: 50px;
+}
+.footer{
+	height: 80px;
+	background-color: #c4a6dd; 
+}
+.footer a:hover{
+	text-decoration: none;
+}
+.overlay:hover p{
+	opacity: 1;
+	
+}
+.overlay:hover img{
+	opacity: .35; 
+}
+p{
+	font-family:"Quicksand";
+}
+a{
+	font-family:"Quicksand";
+}
+
+.projecttitle {
+	text-align: center;
+	font-size: 25px;
+	padding-top: 20px;
+	font-weight: bold;
+}
+.projectcontainer img{
+	width: 100%;
+}
+
+.projectcontainer .row img{
+	width: 50%;
+	height: 100%;
+
+}
